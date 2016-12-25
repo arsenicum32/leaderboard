@@ -1,4 +1,4 @@
-var io = require('socket.io')(12800);
+var io = require('socket.io')(12800, {origins: '*'});
 
 var a = require('./mg');
 
