@@ -1,4 +1,4 @@
-var socket = io.connect( 'https://12800.sliceofring.ru' );
+var socket = io.connect( 'http://12800.sliceofring.ru' );
   //'http://localhost:1280');//'http://1280.sliceofring.ru' ); // 85.143.209.210 сокет по этому ip
 
 socket.on('connect', function() {
