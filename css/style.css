@@ -1,0 +1,183 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700|PT+Mono");
+body {
+  background: #00f;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  margin: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a.token {
+  text-decoration: none;
+}
+.leaderboard .window {
+  margin-top: 20px;
+}
+.random {
+  margin-top: 20px;
+}
+.view {
+  width: 547px;
+  margin: auto;
+}
+.window {
+  width: 100%;
+  background: GhostWhite;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.window .window-footer {
+  width: 100%;
+  height: 37px;
+  background: Gainsboro;
+}
+.window .window-footer span {
+  float: right;
+  line-height: 37px;
+}
+.window .window-footer .t {
+  line-height: 20px;
+  font-size: 1.4em;
+}
+.window .window-footer button {
+  cursor: pointer;
+  float: right;
+  background: #f8f8ff;
+  border: 0;
+  margin: 7px;
+  height: 23px;
+  border-radius: 23px;
+  font-size: 14px;
+}
+.window .window-header {
+  height: 37px;
+  background: Gainsboro;
+  position: relative;
+}
+.window .window-header .autor {
+  line-height: 37px;
+  float: right;
+  margin-right: 7px;
+  color: #00f;
+}
+.window .window-header .action {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.window .window-header .language {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -10px;
+  height: 21px;
+  padding: 0 1em;
+  text-align: right;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border: none;
+  background: transparent;
+  font-family: Lato, sans-serif;
+  color: DimGrey;
+}
+.window .window-header .language:before {
+  content: 'asd';
+}
+.window .window-header .language:hover {
+  background: rgba(0,0,0,0.1);
+}
+.window .window-body {
+  position: relative;
+  height: 180px;
+}
+.window .window-body .code-input {
+  opacity: 0.7;
+  margin: 0;
+  color: #999;
+  resize: none;
+}
+.window .window-body .out,
+.window .window-body .code-output {
+  pointer-events: none;
+  z-index: 3;
+  margin: 0;
+  overflow-y: auto;
+}
+.window .window-body .out code,
+.window .window-body .code-output code {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 1rem;
+  display: block;
+  color: #666;
+  font-size: 0.8rem;
+  font-family: 'PT Mono', monospace;
+}
+.window .window-body .code-input,
+.window .window-body .code-output {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border: none;
+  font-family: 'PT Mono', monospace;
+  font-size: 0.8rem;
+  background: transparent;
+  white-space: pre-wrap;
+  line-height: 1.5em;
+  word-wrap: break-word;
+}
+.token.selector,
+.token.punctuation,
+.token.keyword {
+  color: PaleVioletRed;
+}
+.token.property,
+.token.number,
+.token.string,
+.token.punctuation,
+.token.tag-id {
+  color: DodgerBlue;
+}
+.token.function,
+.token.attr-name {
+  color: CadetBlue;
+}
+.token.atrule .atrule-id {
+  color: BlueViolet;
+}
+.token.boolean {
+  color: LightSlateGray;
+}
+.token.comment {
+  color: DarkGrey;
+}
+code .variable {
+  color: CadetBlue;
+}
+@media (orientation: portrait) {
+  .view {
+    width: 100vw;
+    margin: 0;
+  }
+}
